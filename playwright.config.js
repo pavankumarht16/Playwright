@@ -8,15 +8,11 @@ export default defineConfig({
      webServer: [
     {
       command: 'npm run dev --prefix api',
-      port: 5000,
-      timeout: 120000,
-      reuseExistingServer: !process.env.CI
+      port: 5000
     },
     {
       command: 'npm run dev --prefix frontend',
-      port: 5173,
-      timeout: 120000,
-      reuseExistingServer: !process.env.CI
+      port: 5173
     }
   ]
 })
