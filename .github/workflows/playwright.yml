@@ -32,8 +32,8 @@ jobs:
           cd frontend
           npm install
 
-      - name: Install Playwright
-        run: npx playwright install --with-deps
+      - name: Install Playwright Browsers
+        run: npx --yes playwright install --with-deps
 
       - name: Run tests
         run: npm run test:all
